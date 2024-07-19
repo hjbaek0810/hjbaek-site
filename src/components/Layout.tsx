@@ -6,7 +6,9 @@ export default function Layout({ children }: PropsWithChildren) {
 	return (
 		<div className="bg-primary">
 			<Header />
-			<div>{children}</div>
+			<div className="flex flex-col items-start justify-center text-gray-600 body-font min-h-screen">
+				{children}
+			</div>
 			<Footer />
 		</div>
 	);
