@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Providers from './providers';
+import { ReactNode } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,16 +11,16 @@ export const metadata: Metadata = {
 	description: '포트폴리오'
 };
 
-export default function RootLayout({
+const RootLayout = ({
 	children
 }: Readonly<{
-	children: React.ReactNode;
-}>) {
-	return (
-		<html lang="en">
-			<body className={inter.className}>
-				<Providers>{children}</Providers>
-			</body>
-		</html>
-	);
-}
+	children: ReactNode;
+}>) => (
+	<html lang="en">
+		<body className={inter.className}>
+			<Providers>{children}</Providers>
+		</body>
+	</html>
+);
+
+export default RootLayout;
