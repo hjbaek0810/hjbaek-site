@@ -18,7 +18,7 @@ const Left = ({ title, children }: PropsWithChildren<LeftPropsType>) => (
 );
 
 const Right = ({ children }: PropsWithChildren) => (
-	<div className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center gap-14">
+	<div className="lg:flex-grow flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center gap-14">
 		{children}
 	</div>
 );
