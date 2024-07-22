@@ -3,6 +3,9 @@ import Head from 'next/head';
 import Animation from '@/components/sections/Animation';
 
 import AboutMe from '@/components/sections/AboutMe';
+import Experience from '@/components/sections/Experience';
+
+import Section from '@/components/Section';
 
 const Home = () => (
 	<>
@@ -11,10 +14,14 @@ const Home = () => (
 			<meta name="description" content="FE" />
 			<link rel="icon" href="/favicon.ico" />
 		</Head>
-		<section className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+		<Section>
 			<AboutMe />
 			<Animation />
-		</section>
+		</Section>
+
+		<Section>
+			<Experience />
+		</Section>
 	</>
 );
 
