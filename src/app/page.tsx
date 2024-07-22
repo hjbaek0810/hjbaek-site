@@ -6,6 +6,7 @@ import AboutMe from '@/components/sections/AboutMe';
 import Experience from '@/components/sections/Experience';
 
 import Section from '@/components/Section';
+import Education from '@/components/sections/Education';
 
 const Home = () => (
 	<>
@@ -21,6 +22,10 @@ const Home = () => (
 
 		<Section>
 			<Experience />
+		</Section>
+
+		<Section>
+			<Education />
 		</Section>
 	</>
 );
